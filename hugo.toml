@@ -1,4 +1,4 @@
-baseURL = 'https://ldiex.github.io/'
+baseURL = 'https://ldiex.github.io/blog/'
 languageCode = 'en-us'
 title = 'Space for Lin'
 theme = 'archie'
