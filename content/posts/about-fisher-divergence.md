@@ -23,7 +23,7 @@ $$
 $$
 也就是说, 我们之前定义的Fisher信息量(Expected Fisher Information)$I(\theta)$是对不同样本$x$**观察**到的$\mathcal I_x(\theta)$求期望得到的. (所以求$I(\theta)$的时候注意不要跟求MLE的过程搞混, $I(\theta)$是一个理论量, 不应该包含实际的样本)
 
-现在我们可以来看这个图, 它给出了$\mathcal I_x(\theta)$的一个直观解释: 对于给定的样本$x$, 我们得到的分布$f(x;\theta \mid x) = f_x(\theta)$只是$\theta$的函数, 它对应的似然函数(likelihood)$\ell_x(\theta)$也只是$x$的函数. 似然函数达到最大值的$\hat{\theta}_{\mathrm{MLE}}$就是$\theta$的一个极大似然估计(MLE). 图中给出了这样一个结论
+现在我们可以来看这个图, 它给出了$\mathcal I_x(\theta)$的一个直观解释: 对于给定的样本$x$, 我们得到的分布$f(x;\theta \mid x) = f_x(\theta)$只是$\theta$的函数, 它对应的似然函数(likelihood)$\ell_x(\theta)$也只是$\theta$的函数. 似然函数达到最大值的$\hat{\theta}_{\mathrm{MLE}}$就是$\theta$的一个极大似然估计(MLE). 图中给出了这样一个结论
 - Fisher信息量$\mathcal I_x(\theta)$表示$\hat{\theta}_{\mathrm{MLE}}$处$\ell_x(\theta)$的曲率, 也就是该处曲率圆半径的导数
 - 曲率圆的半径对应在大样本量下$\hat{\theta}_{\mathrm{MLE}}$的方差, 也就是这个估计量的*有效性*(回忆[C-R不等式](https://ldiex.github.io/quartz/Academic-Notes/Mathematics/Uniformly-Minimum-Variance-Unbiased-Estimate,-UMVUE)?)
 
@@ -36,7 +36,7 @@ $$
 > 凡是在一种情况下能减少不确定性的任何事物都叫信息.  -- Claude Shannon
 
 # More on Fisher Information
-我第一次接触到Fisher还是在学习[DDPM](https://ldiex.github.io/quartz/Academic-Notes/Machine-Learning/Denoising-Diffusion-Probabilistic-Models-(DDPM))的时候, 暑假的时候对这玩意还是一知半解, 结果一学期过去了还是一知半解(摊手). 但是这不妨碍我们再小试牛刀地讨论一下Fisher Information到底在Diffusion模型中的
+我第一次接触到Fisher还是在学习[DDPM](https://ldiex.github.io/quartz/Academic-Notes/Machine-Learning/Denoising-Diffusion-Probabilistic-Models-(DDPM))的时候, 暑假的时候对这玩意还是一知半解, 结果一学期过去了还是一知半解(摊手). 但是这不妨碍我们再小试牛刀地讨论一下Fisher Information在Diffusion模型中的形式
 
 在Score Matching的范式下, DDPM的目标是优化这个*Fisher Divergence*
 {{< katex >}}
