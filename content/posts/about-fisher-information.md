@@ -1,5 +1,5 @@
 +++
-title = 'More on Fisher Divergence'
+title = 'More on Fisher Information'
 date = 2024-12-24T12:07:07+08:00
 +++
 
