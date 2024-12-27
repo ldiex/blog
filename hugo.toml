@@ -1,0 +1,23 @@
+baseURL = 'https://ldiex.github.io/blog/'
+languageCode = 'en-us'
+title = 'Space for Lin'
+theme = 'archie'
+
+copyright = "© Diex Lin"
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[params]
+    mode = "auto"
+    katex = true
+    customcss = ["css/first.css"]
+    [params.contact]
+        email = 'diex@live.cn'
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/ldiex"
+

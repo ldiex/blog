@@ -1,0 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+
+html {
+    font-family: 'Noto Serif SC', serif;
+}
+
+p {
+    font-family: 'Noto Serif SC', serif;
+    line-height: 1.5;
+}
