@@ -2,6 +2,7 @@ baseURL = 'https://ldiex.github.io/blog/'
 languageCode = 'en-us'
 title = 'Space for Lin'
 theme = 'archie'
+themesDir = "themes"
 
 copyright = "© Diex Lin"
 # Code Highlight
