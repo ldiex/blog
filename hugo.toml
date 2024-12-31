@@ -22,3 +22,8 @@ name = "GitHub"
 icon = "github"
 url = "https://github.com/ldiex"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+        [markup.goldmark.extensions.typographer]
+            disable = true
